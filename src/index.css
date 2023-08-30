@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.FrequentlyAskQuestions {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .FrequentlyAskQuestions span {
+    font-size: 70px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 91px;
+  }
+  
+  .FrequentlyAskQuestions .accent-text {
+    color: #A41D3D;
+  }
+
+  /* tailwind.css */
+.empowering-header {
+  width: 100%;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.empowering-header span {
+  font-size: 37.94px;
+  font-family: Poppins;
+  font-weight: 700;
+  text-transform: capitalize;
+  word-wrap: break-word;
 }
+
+.empowering-header .accent-text {
+  color: #9A092B;
+}
+
+.empowering-header .main-text {
+  color: black;
+}
+
+  
