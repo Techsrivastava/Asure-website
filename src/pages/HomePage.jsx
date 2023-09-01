@@ -1,40 +1,27 @@
 import React from "react";
 
-
-import bgvideo from "../assets/production_id_4426909 (2160p).mp4";
+import Hero from "../assets/hero.png";
 import Aboutus from "../assets/About us.png";
 import AccordionItem from "../components/AccordionItem";
 
 const HomePage = () => {
-   
   return (
     <>
       <section>
-        <div className="w-screen h-screen ">
-          <video
-            className="top-0 left-0 w-full h-screen object-cover"
-            src={bgvideo}
-            autoPlay
-            loop
-            muted
-          ></video>
-          <div className="bg-black/30 absolute top-0 left-0 w-full h-screen" />
-          <div className="absolute top-0 w-full h-full text-center flex flex-col justify-center text-white">
-            <div className="md:left-[10%] max-w-[1100px] m-auto ">
-            <div className="EmpoweringDreamsViaNavigatingCareersShapingFutureYourPartnerIn360Growth empowering-header md:left-[10%] max-w-[1100px] m-auto">
-      <span className="accent-text">Empowering Dreams via Navigating Careers, Shaping Future Your </span>
-      <span className="main-text">Partner in 360° Growth</span>
-    </div>
-
-              <button class="bg-white hover:bg-blue-500 text-black font-semibold hover:text-white py-2 px-4 border hover:border-transparent rounded">
-                let's Explore
-              </button>
+        <div className="w-full bg-white py-24">
+          <div className="md:max-w-[1240px] m-auto grid  md:grid-cols-2  max-w-[600px]">
+            <div className="flex flex-col m-auto justiyfy-start gap-4 ">
+              <h1 className="py-2 md:text-2xl text-3xl text-[#9A092B] font-semibold">
+                Empowering Dreams via Navigating Careers, Shaping Future Your
+              </h1>
+              <p className="py-2 text-4xl text-black font-md">Partner in 360° Growth</p>
             </div>
+            <img className="md:order-last order-first" src={Hero} alt="" />
           </div>
         </div>
       </section>
 
-      <section className=" py-16">
+      <section className=" ">
       <div className="container mx-auto px-4">
        
         <div className="flex flex-col md:flex-row items-center">
@@ -58,7 +45,7 @@ const HomePage = () => {
         </div>
       </div>
     </section>
-    <section className="bg-gray-100 py-16">
+    <section className="bg-gray-100 py-2">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-semibold mb-6">Under Construction</h2>
         <p className="text-gray-600">
@@ -72,12 +59,12 @@ const HomePage = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
-              <span className="mb-2 block text-lg font-semibold text-primary">
+              <h1 className="mb-2 block text-lg font-semibold text-primary">
                 FAQ
-              </span>
+              </h1>
               <div className="FrequentlyAskQuestions w-full h-full text-center">
-      <span className="text-4xl lg:text-6xl font-semibold text-black">Frequently Ask</span>
-      <span className="text-4xl lg:text-6xl font-semibold text-red-600">Questions</span>
+      <h1 className="text-4xl lg:text-6xl font-semibold text-black">Frequently Ask</h1>
+      <h1 className="text-4xl lg:text-6xl font-semibold text-red-600">Questions</h1>
     </div>
               <p className="text-base text-body-color">
                 There are many variations of passages of Lorem Ipsum available
@@ -146,7 +133,6 @@ const HomePage = () => {
         </svg>
       </div>
     </section>
-
     </>
   );
 };
